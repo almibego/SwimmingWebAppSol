@@ -1,0 +1,45 @@
+﻿@model ListViewModel<Training>
+
+@{
+    ViewData["Title"] = "Тренировки";
+    var categories = ViewData["Swimmers"] as IEnumerable<Swimmer>;
+    int currentSwimmer = (int)ViewData["CurrentSwimmer"];
+    var text = currentSwimmer != 0
+    ? categories
+    .FirstOrDefault(g => g.SwimmerId == currentSwimmer)?
+    .FullName
+    : "Все";
+
+}
+
+<h1>Тренировки</h1>
+
+<div class="row">
+    <div class="col-2">
+        <div class="dropdown mt-2">
+            <a class="btn btn-secondary dropdown-toggle" asp-action="Index" asp-controller="Trainings" role="button"
+               id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                @text
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item"
+                   asp-action="Index"
+                   asp-controller="Trainings">Все</a>
+                @foreach (var item in categories)
+                {
+                    <a class="dropdown-item"
+                       asp-action="Index"
+                       asp-controller="Trainings"
+                       asp-route-group="@item.SwimmerId"
+                       asp-route-pageNo="1">@item.FullName</a>
+                }
+            </div>
+        </div>
+    </div>
+    <div class="col-10">
+             <div class="card-group" id="list">
+                <partial name="_ListPartial" model="@Model" />
+            </div>
+        <pager page-current="@Model.CurrentPage" page-total="@Model.TotalPages" action="Index" controller="Trainings" group-id="@currentSwimmer"></pager>
+    </div>    
+</div>

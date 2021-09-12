@@ -1,0 +1,57 @@
+﻿@page "{id:int}"
+@model SwimmingWebApp.Areas.Admin.Pages.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Training</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Training.TrainingId" />
+            <div class="form-group">
+                <label asp-for="Training.TrainingDate" class="control-label"></label>
+                <input asp-for="Training.TrainingDate" class="form-control" />
+                <span asp-validation-for="Training.TrainingDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Training.TrainingVolume" class="control-label"></label>
+                <input asp-for="Training.TrainingVolume" class="form-control" />
+                <span asp-validation-for="Training.TrainingVolume" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Training.KeyAssignment" class="control-label"></label>
+                <input asp-for="Training.KeyAssignment" class="form-control" />
+                <span asp-validation-for="Training.KeyAssignment" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Training.KeyAssignmentBestTime" class="control-label"></label>
+                <input asp-for="Training.KeyAssignmentBestTime" class="form-control" />
+                <span asp-validation-for="Training.KeyAssignmentBestTime" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Training.Feeling" class="control-label"></label>
+                <input asp-for="Training.Feeling" class="form-control" />
+                <span asp-validation-for="Training.Feeling" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Training.SwimmerId" class="control-label"></label>
+                <select asp-for="Training.SwimmerId" class="form-control" asp-items="ViewBag.SwimmerId"></select>
+                <span asp-validation-for="Training.SwimmerId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+

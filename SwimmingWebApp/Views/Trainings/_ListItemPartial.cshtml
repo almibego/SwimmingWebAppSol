@@ -1,0 +1,25 @@
+﻿@model Training
+<div class='card m-2 p-1 text-center col-4'>
+    <div class="card-body">
+        <h5 class="card-title">
+            @Model.TrainingDate
+        </h5>
+        <div class="card-text badge badge-secondary">
+            <h6>@Model.TrainingVolume м</h6>
+        </div>
+        <p class="card-text">
+            Самочувствие:   @Model.Feeling
+        </p>
+        <p class="card-text">
+            Ключевое задание: @Model.KeyAssignment
+        </p>
+        <p class="card-text">
+            Лучшее время ключевого задания: @Model.KeyAssignmentBestTime
+        </p>
+        @{ // Получение текущего адреса
+            var request = ViewContext.HttpContext.Request;
+            var returnUrl = request.Path +
+            request.QueryString.ToUriComponent();
+        }
+    </div>
+</div>

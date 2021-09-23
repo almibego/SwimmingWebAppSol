@@ -5,7 +5,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Администрирование тренировок</h1>
 
 <p>
     <a asp-page="Create" class="btn btn-outline-info">
@@ -15,24 +15,23 @@
 <table class="table">
     <thead>
         <tr>
-            <th></th>
             <th>
-                @Html.DisplayNameFor(model => model.Training[0].TrainingDate)
+                Дата тренировки
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Training[0].TrainingVolume)
+                Объем тренировки
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Training[0].KeyAssignment)
+                Ключевое задание
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Training[0].KeyAssignmentBestTime)
+                Лучшее время задания
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Training[0].Feeling)
+                Самочувствие
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Training[0].Swimmer)
+                Пловец
             </th>
             <th></th>
         </tr>
@@ -56,7 +55,7 @@
                 @Html.DisplayFor(modelItem => item.Feeling)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Swimmer.SwimmerId)
+                @Html.DisplayFor(modelItem => item.Swimmer.FullName)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.TrainingId" class="btn btn-outline-info">

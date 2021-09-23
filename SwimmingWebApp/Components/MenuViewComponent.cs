@@ -14,7 +14,7 @@ namespace SwimmingWebApp.Components
             {
                 new MenuItem{ Controller="Home", Action="Index", Text="Соревнования"},
                 new MenuItem{ Controller="Trainings", Action="Index", Text="Тренировки"},
-                new MenuItem{ IsPage=true, Area="Admin", Page="/Index", Text="Администрирование"}
+                new MenuItem{ IsPage=true, Area="Admin", Page="/Index", Text="Администрирование тренировок"}
             };
 
         public IViewComponentResult Invoke()

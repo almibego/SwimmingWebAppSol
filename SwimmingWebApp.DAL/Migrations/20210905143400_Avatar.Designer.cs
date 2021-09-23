@@ -13,7 +13,7 @@ namespace SwimmingWebApp.DAL.Migrations
     [Migration("20210905143400_Avatar")]
     partial class Avatar
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

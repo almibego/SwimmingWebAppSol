@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace SwimmingWebApp.DAL.Migrations
 {
-    public partial class Avatar : Migration
+    public partial class Avatar
     {
-        protected override void Up(MigrationBuilder migrationBuilder)
+        protected void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<byte[]>(
                 name: "AvatarImage",
@@ -13,7 +13,7 @@ namespace SwimmingWebApp.DAL.Migrations
                 nullable: true);
         }
 
-        protected override void Down(MigrationBuilder migrationBuilder)
+        protected void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropColumn(
                 name: "AvatarImage",

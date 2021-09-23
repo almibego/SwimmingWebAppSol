@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{B8692F7E-A438-4125-8D48-3B825059F86B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SwimmingWebApp/appsettings.json">
+    <Files>
+      <File FileName="SwimmingWebApp/appsettings.json" Line="9" Column="50" />
+      <File FileName="SwimmingWebApp/Startup.cs" Line="101" Column="1" />
+      <File FileName="SwimmingWebApp/Program.cs" Line="16" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SwimmingWebAppSol" expanded="True">
+            <Node name="SwimmingWebApp" expanded="True">
+              <Node name="appsettings.json" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.SwimmingWebApp PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

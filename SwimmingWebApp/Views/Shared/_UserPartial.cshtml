@@ -14,13 +14,10 @@
                 @User.Identity.Name
             </div>
             <div class="dropdown-divider"></div>
-            @*<a class="dropdown-item" asp-controller="BestResults" asp-action="Index">Мои лучшие результаты</a>*@
-            <form asp-area="Identity"
+                <form asp-area="Identity"
                   asp-page="/Account/Logout"
                   asp-route-returnurl="@ViewContext.HttpContext.Request.Path">
-                <input type="submit"
-                       value="Выйти"
-                       class="dropdown-item" />
+                <input type="submit" value="Выйти" class="dropdown-item" />
             </form>
         </div>
     </div>

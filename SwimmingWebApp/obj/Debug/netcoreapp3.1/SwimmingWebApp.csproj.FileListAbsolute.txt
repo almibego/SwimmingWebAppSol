@@ -328,9 +328,9 @@ F:/Repos/SwimmingWebAppSol/SwimmingWebApp/obj/Debug/netcoreapp3.1/Razor/Areas/Ad
 /Users/aliaksei.mikhailau/Projects/GitHub/SwimmingWebAppSol/SwimmingWebApp/obj/Debug/netcoreapp3.1/SwimmingWebApp.MvcApplicationPartsAssemblyInfo.cache
 /Users/aliaksei.mikhailau/Projects/GitHub/SwimmingWebAppSol/SwimmingWebApp/obj/Debug/netcoreapp3.1/SwimmingWebApp.RazorAssemblyInfo.cache
 /Users/aliaksei.mikhailau/Projects/GitHub/SwimmingWebAppSol/SwimmingWebApp/obj/Debug/netcoreapp3.1/SwimmingWebApp.RazorAssemblyInfo.cs
+/Users/aliaksei.mikhailau/Projects/GitHub/SwimmingWebAppSol/SwimmingWebApp/obj/Debug/netcoreapp3.1/scopedcss/bundle/SwimmingWebApp.styles.css
 /Users/aliaksei.mikhailau/Projects/GitHub/SwimmingWebAppSol/SwimmingWebApp/obj/Debug/netcoreapp3.1/staticwebassets/SwimmingWebApp.StaticWebAssets.Manifest.cache
 /Users/aliaksei.mikhailau/Projects/GitHub/SwimmingWebAppSol/SwimmingWebApp/obj/Debug/netcoreapp3.1/staticwebassets/SwimmingWebApp.StaticWebAssets.xml
-/Users/aliaksei.mikhailau/Projects/GitHub/SwimmingWebAppSol/SwimmingWebApp/obj/Debug/netcoreapp3.1/scopedcss/bundle/SwimmingWebApp.styles.css
 /Users/aliaksei.mikhailau/Projects/GitHub/SwimmingWebAppSol/SwimmingWebApp/obj/Debug/netcoreapp3.1/SwimmingWebApp.TagHelpers.input.cache
 /Users/aliaksei.mikhailau/Projects/GitHub/SwimmingWebAppSol/SwimmingWebApp/obj/Debug/netcoreapp3.1/SwimmingWebApp.TagHelpers.output.cache
 /Users/aliaksei.mikhailau/Projects/GitHub/SwimmingWebAppSol/SwimmingWebApp/obj/Debug/netcoreapp3.1/SwimmingWebApp.RazorCoreGenerate.cache

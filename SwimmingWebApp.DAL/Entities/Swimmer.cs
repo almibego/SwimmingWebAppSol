@@ -16,5 +16,6 @@ namespace SwimmingWebApp.DAL.Entities
         public string Rank { get; set; }
 
         public List<Training> Trainings { get; set; }
+        public List<Result> Results { get; set; }
     }
 }

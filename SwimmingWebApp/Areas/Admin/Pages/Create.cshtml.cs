@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using SwimmingWebApp.DAL.Data;
 using SwimmingWebApp.DAL.Entities;
+using Microsoft.AspNetCore.Identity;
 
 namespace SwimmingWebApp.Areas.Admin.Pages
 {

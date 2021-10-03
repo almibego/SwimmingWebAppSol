@@ -11,7 +11,6 @@ F:/Repos/SwimmingWebAppSol/SwimmingWebApp.DAL/obj/Debug/netcoreapp3.1/SwimmingWe
 /Users/aliaksei.mikhailau/Projects/GitHub/SwimmingWebAppSol/SwimmingWebApp.DAL/bin/Debug/netcoreapp3.1/SwimmingWebApp.DAL.deps.json
 /Users/aliaksei.mikhailau/Projects/GitHub/SwimmingWebAppSol/SwimmingWebApp.DAL/bin/Debug/netcoreapp3.1/SwimmingWebApp.DAL.dll
 /Users/aliaksei.mikhailau/Projects/GitHub/SwimmingWebAppSol/SwimmingWebApp.DAL/bin/Debug/netcoreapp3.1/SwimmingWebApp.DAL.pdb
-/Users/aliaksei.mikhailau/Projects/GitHub/SwimmingWebAppSol/SwimmingWebApp.DAL/obj/Debug/netcoreapp3.1/SwimmingWebApp.DAL.csproj.AssemblyReference.cache
 /Users/aliaksei.mikhailau/Projects/GitHub/SwimmingWebAppSol/SwimmingWebApp.DAL/obj/Debug/netcoreapp3.1/SwimmingWebApp.DAL.GeneratedMSBuildEditorConfig.editorconfig
 /Users/aliaksei.mikhailau/Projects/GitHub/SwimmingWebAppSol/SwimmingWebApp.DAL/obj/Debug/netcoreapp3.1/SwimmingWebApp.DAL.AssemblyInfoInputs.cache
 /Users/aliaksei.mikhailau/Projects/GitHub/SwimmingWebAppSol/SwimmingWebApp.DAL/obj/Debug/netcoreapp3.1/SwimmingWebApp.DAL.AssemblyInfo.cs

@@ -12,9 +12,10 @@ namespace SwimmingWebApp.Components
     {
         private List<MenuItem> _menuItems = new List<MenuItem>
             {
-                new MenuItem{ Controller="Home", Action="Index", Text="Соревнования"},
+                new MenuItem{ Controller="Home", Action="Index", Text="Главная"},
                 new MenuItem{ Controller="Trainings", Action="Index", Text="Тренировки"},
-                new MenuItem{ IsPage=true, Area="Admin", Page="/Index", Text="Администрирование тренировок"}
+                new MenuItem{ Controller="Competitions", Action="Index", Text="Соревнования"},
+                new MenuItem{ Controller="Swimmers", Action="Index", Text="Пловцы"}
             };
 
         public IViewComponentResult Invoke()

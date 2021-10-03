@@ -63,7 +63,7 @@ namespace SwimmingWebApp
                 opt.Cookie.IsEssential = true;
             });
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
 
         }
 

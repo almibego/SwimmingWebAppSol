@@ -8,6 +8,7 @@ namespace SwimmingWebApp.DAL.Data
     {
         public DbSet<Training> Trainings { get; set; }
         public DbSet<Swimmer> Swimmers { get; set; }
+        public DbSet<Result> Results { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
             

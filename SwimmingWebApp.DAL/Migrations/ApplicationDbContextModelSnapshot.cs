@@ -218,6 +218,35 @@ namespace SwimmingWebApp.DAL.Migrations
                     b.ToTable("AspNetUsers");
                 });
 
+            modelBuilder.Entity("SwimmingWebApp.DAL.Entities.Result", b =>
+                {
+                    b.Property<int>("ResultId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Distance")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Place")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("SwimmerId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Time")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ResultId");
+
+                    b.HasIndex("SwimmerId");
+
+                    b.ToTable("Result");
+                });
+
             modelBuilder.Entity("SwimmingWebApp.DAL.Entities.Swimmer", b =>
                 {
                     b.Property<int>("SwimmerId")
@@ -236,7 +265,7 @@ namespace SwimmingWebApp.DAL.Migrations
 
                     b.HasKey("SwimmerId");
 
-                    b.ToTable("Swimmers");
+                    b.ToTable("Swimmer");
                 });
 
             modelBuilder.Entity("SwimmingWebApp.DAL.Entities.Training", b =>
@@ -318,6 +347,15 @@ namespace SwimmingWebApp.DAL.Migrations
                     b.HasOne("SwimmingWebApp.DAL.Entities.ApplicationUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("SwimmingWebApp.DAL.Entities.Result", b =>
+                {
+                    b.HasOne("SwimmingWebApp.DAL.Entities.Swimmer", "Swimmer")
+                        .WithMany("Results")
+                        .HasForeignKey("SwimmerId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

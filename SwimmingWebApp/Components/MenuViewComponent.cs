@@ -14,7 +14,7 @@ namespace SwimmingWebApp.Components
             {
                 new MenuItem{ Controller="Home", Action="Index", Text="Главная"},
                 new MenuItem{ Controller="Trainings", Action="Index", Text="Тренировки"},
-                new MenuItem{ Controller="Competitions", Action="Index", Text="Соревнования"},
+                new MenuItem{ Controller="Results", Action="Index", Text="Результаты"},
                 new MenuItem{ Controller="Swimmers", Action="Index", Text="Пловцы"}
             };
 

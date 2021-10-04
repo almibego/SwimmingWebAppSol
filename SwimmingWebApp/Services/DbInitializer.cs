@@ -71,6 +71,17 @@ namespace SwimmingWebApp.Services
                 });
                 await context.SaveChangesAsync();
             }
+
+            if (!context.Results.Any())
+            {
+                context.Results.AddRange(
+                new List<Result>
+                {
+                    new Result { Date = new DateTime (2021, 03, 07), Place = "Минск", Distance = "200 м вольным стилем", Time = "1:56,02", SwimmerId = 1 },
+                    new Result { Date = new DateTime (2021, 03, 08), Place = "Рим", Distance = "50 м брассом", Time = "31,05", SwimmerId = 2 }
+                });
+                await context.SaveChangesAsync();
+            }
         }
     }
 }

@@ -1,0 +1,40 @@
+﻿@page
+@model SwimmingWebApp.Areas.SwimAdmin.Pages.CreateModel
+
+@{
+    ViewData["Title"] = "Добавить пловца";
+}
+
+<h1>Добавить пловца</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Swimmer.FullName" class="control-label">ФИО</label>
+                <input asp-for="Swimmer.FullName" class="form-control" />
+                <span asp-validation-for="Swimmer.FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Swimmer.DateOfBirth" class="control-label">Дата рождения</label>
+                <input asp-for="Swimmer.DateOfBirth" class="form-control" />
+                <span asp-validation-for="Swimmer.DateOfBirth" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Swimmer.Rank" class="control-label">Спортивный разряд</label>
+                <input asp-for="Swimmer.Rank" class="form-control" />
+                <span asp-validation-for="Swimmer.Rank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Добавить" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Вернуться к администрированию пловцов</a>
+</div>
+

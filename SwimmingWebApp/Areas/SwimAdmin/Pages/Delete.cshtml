@@ -1,0 +1,39 @@
+﻿@page
+@model SwimmingWebApp.Areas.SwimAdmin.Pages.DeleteModel
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Удалить данные о пловце</h1>
+
+<h3>Вы уверены, что хотите удалить данные о пловце? <br> <b>Это удалит также относящиеся к нему тренировки и соревновательные результаты!</b></h3>
+<div>    
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            ФИО
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Swimmer.FullName)
+        </dd>
+        <dt class="col-sm-2">
+            Дата рождения
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Swimmer.DateOfBirth)
+        </dd>
+        <dt class="col-sm-2">
+            Спортивный разряд
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Swimmer.Rank)
+        </dd>
+    </dl>
+    
+    <form method="post">
+        <input type="hidden" asp-for="Swimmer.SwimmerId" />
+        <input type="submit" value="Удалить" class="btn btn-danger" /> |
+        <a asp-page="./Index">Вернуться к администрированию пловцов</a>
+    </form>
+</div>

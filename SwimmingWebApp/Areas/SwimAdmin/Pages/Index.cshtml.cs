@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using SwimmingWebApp.DAL.Data;
 using SwimmingWebApp.DAL.Entities;
 
-namespace SwimmingWebApp.Areas.Admin.Pages
+namespace SwimmingWebApp.Areas.SwimAdmin.Pages
 {
     public class IndexModel : PageModel
     {
@@ -20,12 +19,11 @@ namespace SwimmingWebApp.Areas.Admin.Pages
             _context = context;
         }
 
-        public IList<Training> Training { get;set; }
+        public IList<Swimmer> Swimmer { get;set; }
 
         public async Task OnGetAsync()
         {
-            Training = await _context.Trainings
-                .Include(t => t.Swimmer).ToListAsync();
+            Swimmer = await _context.Swimmers.ToListAsync();
         }
     }
 }

@@ -370,3 +370,16 @@ F:\Repos\SwimmingWebAppSol\SwimmingWebApp\obj\Debug\netcoreapp3.1\SwimmingWebApp
 F:\Repos\SwimmingWebAppSol\SwimmingWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Results\Index.cshtml.g.cs
 F:\Repos\SwimmingWebAppSol\SwimmingWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Results\_ListItemPartial.cshtml.g.cs
 F:\Repos\SwimmingWebAppSol\SwimmingWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Results\_ListPartial.cshtml.g.cs
+F:\Repos\SwimmingWebAppSol\SwimmingWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Swimmers\Index.cshtml.g.cs
+F:\Repos\SwimmingWebAppSol\SwimmingWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Swimmers\_ListItemPartial.cshtml.g.cs
+F:\Repos\SwimmingWebAppSol\SwimmingWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Swimmers\_ListPartial.cshtml.g.cs
+F:\Repos\SwimmingWebAppSol\SwimmingWebApp\obj\Debug\netcoreapp3.1\Razor\Areas\SwimAdmin\Pages\Create.cshtml.g.cs
+F:\Repos\SwimmingWebAppSol\SwimmingWebApp\obj\Debug\netcoreapp3.1\Razor\Areas\SwimAdmin\Pages\Delete.cshtml.g.cs
+F:\Repos\SwimmingWebAppSol\SwimmingWebApp\obj\Debug\netcoreapp3.1\Razor\Areas\SwimAdmin\Pages\Details.cshtml.g.cs
+F:\Repos\SwimmingWebAppSol\SwimmingWebApp\obj\Debug\netcoreapp3.1\Razor\Areas\SwimAdmin\Pages\Edit.cshtml.g.cs
+F:\Repos\SwimmingWebAppSol\SwimmingWebApp\obj\Debug\netcoreapp3.1\Razor\Areas\SwimAdmin\Pages\Index.cshtml.g.cs
+F:\Repos\SwimmingWebAppSol\SwimmingWebApp\obj\Debug\netcoreapp3.1\Razor\Areas\SwimAdmin\Pages\_ViewImports.cshtml.g.cs
+F:\Repos\SwimmingWebAppSol\SwimmingWebApp\obj\Debug\netcoreapp3.1\Razor\Areas\SwimAdmin\Pages\_ViewStart.cshtml.g.cs
+F:\Repos\SwimmingWebAppSol\SwimmingWebApp\obj\Debug\netcoreapp3.1\Razor\Areas\ResAdmin\Pages\Index.cshtml.g.cs
+F:\Repos\SwimmingWebAppSol\SwimmingWebApp\obj\Debug\netcoreapp3.1\Razor\Areas\ResAdmin\Pages\_ViewImports.cshtml.g.cs
+F:\Repos\SwimmingWebAppSol\SwimmingWebApp\obj\Debug\netcoreapp3.1\Razor\Areas\ResAdmin\Pages\_ViewStart.cshtml.g.cs

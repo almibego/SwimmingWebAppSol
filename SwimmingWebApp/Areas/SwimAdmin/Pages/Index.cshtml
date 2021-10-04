@@ -1,0 +1,51 @@
+﻿@page
+@model SwimmingWebApp.Areas.SwimAdmin.Pages.IndexModel
+
+@{
+    ViewData["Title"] = "Администрирование пловцов";
+}
+
+<h1>Администрирование пловцов</h1>
+
+<p>
+    <a asp-page="Create">Добавить пловца</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ФИО
+            </th>
+            <th>
+                Дата рождения
+            </th>
+            <th>
+                Разряд
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Swimmer) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOfBirth)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rank)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.SwimmerId" class="btn btn-outline-info">
+                    <span class="fas fa-edit"></span>
+                </a>
+                <a asp-page="./Delete" asp-route-id="@item.SwimmerId" class="btn btn-outline-danger">
+                    <span class="fas fa-trash-alt"></span>
+                </a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

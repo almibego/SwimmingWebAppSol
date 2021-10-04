@@ -1,0 +1,19 @@
+﻿@model Swimmer
+<div class='card m-2 p-1 text-center col-4'>
+    <div class="card-body">
+        <h5 class="card-title">
+            @Model.FullName
+        </h5>
+        <div class="card-text badge badge-secondary">
+            <h6>@Model.DateOfBirth.ToString("dd-MM-yyyy")</h6>    
+        </div>
+        <p class="card-text">
+            Разряд:   @Model.Rank
+        </p>               
+        @{ // Получение текущего адреса
+            var request = ViewContext.HttpContext.Request;
+            var returnUrl = request.Path +
+            request.QueryString.ToUriComponent();
+        }
+    </div>
+</div>
